@@ -1,0 +1,20 @@
+{{#if products}}
+    {{#each products}}
+        <div class="card">
+            <!-- <a href="#" class="card__link">Comprar</a> -->
+            <article class="card__article">
+                <div class="card__image-container">
+                    <img src="" alt="Producto" class="card__image">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__heading">{{name}}</h2>
+                    <div class="card__description">
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    {{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}
